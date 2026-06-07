@@ -20,6 +20,11 @@ void rotate_array() {
   int rotate_d = 0;
   cin >> rotate_d;
 
+  if (n == 0) {
+    cout << endl;
+    return;
+  }
+
   rotate_d %= n;
 
   // left -> left ,right whole reversal
